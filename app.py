@@ -5,7 +5,7 @@ import os
 
 load_dotenv()  
 
-st.title("Chatbot Application")
+st.title("AI Chatbot Application by Agilefever")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
