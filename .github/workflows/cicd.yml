@@ -55,4 +55,6 @@ jobs:
     steps:
       - name: Deploy application
         run: |
-          echo "Deploying LLM chatbot..."
+          curl "$RENDER_DEPLOY_HOOK_URL"
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
